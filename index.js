@@ -1,7 +1,14 @@
-var katzDeli = [];
+var katzDeliLine = [];
 
 function takeANumber(katzDeliLine, name) {
-  return katzDeliLine[name] + 1;
+  if (katzDeliLine.length === 0) {
+    katzDeliLine.push(name);
+    return `Welcome, ${name}. You are number 1 in line.`
+  }
+  else {
+    katzDeliLine.push(name);
+    return `Welcome, ${name}. You are number ${katzDeliLine.length} in line.`
+  }
 }
 
 function nowServing(katzDeliLine) {
