@@ -30,9 +30,9 @@ function currentLine(katzDeliLine) {
   }
   else {
     for (let i = 0; i < katzDeliLine.length - 1; i++) {
-      string.concat(`${i+1}. ${katzDeliLine[i]}, `);
+      string = string.concat(`${i+1}. ${katzDeliLine[i]}, `);
     }
-    string.concat(`${katzDeliLine.length}. ${katzDeliLine[katzDeliLine.length - 1]}`);
+    string = string.concat(`${katzDeliLine.length}. ${katzDeliLine[katzDeliLine.length - 1]}`);
   }
   return string;
 }
